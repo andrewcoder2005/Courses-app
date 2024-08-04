@@ -1,9 +1,7 @@
+//*  HOME / SEARCH / CONTACT (mediocre sites)
 const express = require('express');
 const router = express.Router();
-
-const siteController = require('../app/controllers/SiteController');
-
-router.use('/search', siteController.search);
-router.use('/', siteController.index);
-
+const sitesController = require('../app/controllers/SitesController') 
+router.use('/search', sitesController.search);
+router.use('/', sitesController.index);
 module.exports = router;
