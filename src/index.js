@@ -5,11 +5,13 @@ const path = require('path');
 const app = express();
 const port = 3000;
 const route = require('../src/routes/index.route');
-
+// * Connect to DB
+const db = require('./configs/db')
+db.connectDB();
 // Set up Handlebars as the template engine
 app.engine('.hbs', engine({ extname: '.hbs'}));
 app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, 'resources/views'));
+app.set('views', path.join(__dirname, 'resources','views'));
 
 // Handle static files from the 'public' directory 
 app.use(express.static(path.join(__dirname, 'public')));
