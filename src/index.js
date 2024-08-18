@@ -3,6 +3,8 @@ const morgan = require('morgan');
 const { engine } = require('express-handlebars');
 const path = require('path');
 const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true}));
 const port = 3000;
 const route = require('../src/routes/index.route');
 // * Connect to DB
@@ -24,3 +26,4 @@ route(app);
 app.listen(port, () => {
     console.log(`App is listening at http://localhost:${port}`);
 });
+
