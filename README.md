@@ -1,15 +1,15 @@
-# 📚 Courses App
+Courses App
 
 A simple course listing web app built with Node.js, Express, Handlebars, MongoDB, and Bootstrap.
 
-## 🚀 Features
+Features
 
 - Add, view, and delete courses
 - Responsive UI with Bootstrap
 - Uses MongoDB for storing course data
 - Handlebars for server-side rendering
 
-## 🛠️ Tech Stack
+ Tech Stack
 
 - Node.js
 - Express
@@ -17,7 +17,7 @@ A simple course listing web app built with Node.js, Express, Handlebars, MongoDB
 - Handlebars
 - Bootstrap 5
 
-## 📦 Installation
+Installation
 
 ```bash
 git clone https://github.com/andrewcoder2005/courses-app.git
